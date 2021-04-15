@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8"> <!-- Metatag -->
+  <title>L'Atitude Analysis Dashboard</title>
+  <!-- Bootstap link for CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- internal CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+
+
+  <!-- Beginning of Navbar code -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">L'Attitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+     
+      
+      <div>
+        <form class="form-inline my-2 my-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="temperature.html">Temperature</a>
+              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+            </div> 
+          </li> 
+        </form>
+
+        <!--
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        -->
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navbar code -->
+
+
+
+
+<!-- Start of sidebar code -->
+<div>
+  
+    <section class="app">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+    
+          <ul>
+            <li>
+              <a href="cloudiness.html"> 
+                <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" width=50px>
+                <span>Cloudiness</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="humidity.html"> 
+                <img src="Resources/assets/images/Fig2.png" alt="Humidity" width=50px>
+                <span>Humidity</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="temperature.html"> 
+                <img src="Resources/assets/images/Fig1.png" alt="Temperature" width=50px>
+                <span>Temperature</span>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="windspeed.html"> 
+                <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" width=50px>
+                <span>Wind Speed</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </section>
+</div>
+<!-- Start of sidebar code -->
+
+
+<div>
+  <section>
+    <h1>WeatherPy</h1>
+  </section>
+  <section>
+    <b>
+
+    </b>
+
+  </section>
+</div>
+
+<!--
+  <div class="container">
+    <section>
+      <h1>WeatherPy</h1>
+    </section>
+    <!-- Start of sidebar code -->
+    <!-- <section>
+      <div class="row g-2">
+        <div class="col align-self-left">
+          <div class="col-1">
+            <article>
+            <a target="_blank" href="Resources/assets/images/Fig1.png">
+              <img src="Resources/assets/images/Fig1.png" alt="Temperature" class="img-fluid">
+            </a>
+            <p><em>Temperature</em></p>
+            </article>
+          
+            <article>
+            <a target="_blank" href="Resources/assets/images/Fig2.png">
+              <img src="Resources/assets/images/Fig2.png" alt="Humidity" class="img-fluid">
+            </a>
+            <p><em>Humidity</em></p>
+            </article>
+
+            <article>
+              <a target="_blank" href="Resources/assets/images/Fig3.png">
+                <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" class="img-fluid">
+              </a>
+              <p><em>Cloudiness</em></p>
+            </article>
+
+            <article>
+                <a target="_blank" href="Resources/assets/images/Fig4.png">
+                  <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" class="img-fluid">
+                </a>
+                <p><em>Wind Speed</em></p>
+            </article>
+          </div>    
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <article>
+          <a target="_blank" href="Resources/assets/images/Fig3.png">
+            <img src="Resources/assets/images/Fig3.png" alt="Fig 3" class="img-fluid">
+          </a>
+          <p><em>Fig 3</em></p>
+          </article>
+        </div>
+
+        <div class="col-md-6">
+          <article>
+          <a target="_blank" href="Resources/assets/images/Fig4.png">
+            <img src="Resources/assets/images/Fig4.png" alt="Fig 4" class="img-fluid">
+          </a>
+          <p><em>Fig 4</em></p>
+          </article>
+        </div>
+      </div>
+      -->
+
+    </section>
+    <!-- End of sidebar code -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+</body>
+</html>
