@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>L'Atitude Analysis Dashboard</title>
+  <title>Temperature - L'Atitude Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -39,8 +39,7 @@
       </form>
     </div>
   </nav>
-
-<div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-2">
         <h2 class="text-center">Thumbnails</h2>
@@ -81,15 +80,17 @@
 
       </div>
         <div class="col-md-9">
-          <h3 class="text-center">Temperature</h3>
+          <h3 class="text-center">Max Temperature</h3>
           <a>
-            <pict> <img src="./Resources/assets/Images/fig1.png" alt="Temperature"><br> </pict>
-            <p>The purpose of this plot is to show the temperature across the various cities by latitude. Based on the Open 
+            <pict> <img src="./Resources/assets/Images/fig1.png" class="img-responsive center-block d-block mx-auto" alt="Temperature"><br> </pict>
+            <span>
+              <p>The purpose of this plot is to show the temperature across the various cities by latitude. Based on the Open 
               Weather API and the CitiPy Python Libraries our set of 500 randomly selected cities from around the 
               world was used create the various plots diplayed. <br> <br>
 
-					    This plot shows maximum temperature along the latitude lines for the cities in our data set.
+              This plot shows maximum temperature along the latitude lines for the cities in our data set.
               This result should be unsurprising as the closer to 0 latitude the more solar exposure an area would have.</p>
+            </span>
           </a>
         </div>
       </div>
